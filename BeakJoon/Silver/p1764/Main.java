@@ -1,10 +1,7 @@
 package Silver.p1764;
 
 import java.io.*;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -16,16 +13,18 @@ public class Main {
 
         LinkedList<String> noListenAndWatches = new LinkedList<>();
 
-        HashMap<String, Integer> map = new HashMap<>();
+        // HashMap<String, Integer> map = new HashMap<>();
+        HashSet<String> set = new HashSet<>();
 
         for (int i = 0; i < n; ++i) {
-            map.put(br.readLine(), 1);
+            // map.put(br.readLine(), 1);
+            set.add(br.readLine());
         }
 
         for (int i = 0; i < m; ++i) {
             String str = br.readLine();
 
-            if (map.containsKey(str)) {
+            if (set.contains(str)) {
                noListenAndWatches.add(str);
             }
         }
