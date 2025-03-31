@@ -1,4 +1,4 @@
-# [1000] A + B
+# [250136] 석유 시추
 
 문제 링크 https://school.programmers.co.kr/learn/courses/30/lessons/250136
 
